@@ -12,7 +12,7 @@ class Solution {
         for (int i = 0; i<A.Length; i++){
             //If this fish is flowing downstream, push it into the stack
             if (B[i] == 1) downstream.Push(A[i]);
-            //If the fish is flowing upstream but there are no downstream fishes ahead, it's a survivor
+            //If the fish is flowing upstream but there are no downstream fishes ahead, it''s a survivor
             if (B[i] == 0 && downstream.Count == 0) survivors++;
             //If the fish is flowing upstream and there are downstream fishes ahead, compare their size.
             //If the upstream fish is bigger than the top of the downstream stack, pop one from it and
